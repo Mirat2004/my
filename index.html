@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Менің сайт-визиткам</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Менің жеке сайт-визиткам</h1>
+        <nav>
+            <a href="#about">Мен туралы</a>
+            <a href="#skills">Дағдылар</a>
+            <a href="#contact">Байланыс</a>
+        </nav>
+    </div>
+</header>
+
+<section id="about" class="section">
+    <div class="container">
+        <h2>Мен туралы</h2>
+        <p>Мен веб-әзірлеуді үйреніп жатқан студентпін. HTML, CSS және JavaScript арқылы сайттар жасай аламын.</p>
+        <button onclick="showModal()">Маған жазу</button>
+    </div>
+</section>
+
+<section id="skills" class="section">
+    <div class="container">
+        <h2>Дағдылар</h2>
+        <ul>
+            <li>HTML5 – семантикалық құрылым</li>
+            <li>CSS3 – стиль және адаптив дизайн</li>
+            <li>JavaScript – интерактив элементтер</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <div class="container">
+        <h2>Байланыс формасы</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Атыңыз" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="submit">Жіберу</button>
+        </form>
+        <p id="message"></p>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Барлық құқықтар қорғалған</p>
+    </div>
+</footer>
+
+<!-- Модаль терезе -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span onclick="closeModal()" class="close">&times;</span>
+        <p>Хабарлама жіберілді!</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
